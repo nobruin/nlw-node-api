@@ -1,0 +1,55 @@
+<style>
+    .container {
+        width: 800px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .value {
+        padding: 10px;
+        margin: 5px;
+        background: #8257e6;
+        color: #fff;
+        border-radius: 6px;
+        width: 15px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .level {
+        display: flex;
+        margin: 10px;
+        justify-content: space-between;
+        width: 350px;
+    }
+
+    .answers {
+        width: 350px;
+        justify-content: center;
+        display: flex;
+    }
+</style>
+
+
+<div class="container">
+    <label>Olá <strong>{{name}}</strong> Tudo bem !</label>
+    <h3>{{title}}</h3>
+
+    <div class="level">
+        <span>Muito provavel</span>
+        <span>Pouco provavel</span>
+    </div>
+    <br />
+    <strong>{{description}}</strong>
+    <div class="answers">
+        <a class="value" href="{{link}}/1/user={{user_id}}">1</a>
+        <a class="value" href="{{link}}/2/user={{user_id}}">2</a>
+        <a class="value" href="{{link}}/3/user={{user_id}}">3</a>
+        <a class="value" href="{{link}}/4/user={{user_id}}">4</a>
+        <a class="value" href="{{link}}/5/user={{user_id}}">5</a>
+    </div>
+
+</div>
